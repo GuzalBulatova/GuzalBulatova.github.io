@@ -1,0 +1,69 @@
+header{
+    padding: 30px 0;
+}
+.cv-hamburger{
+    cursor: pointer;
+}
+.cv-hamburger span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin-bottom: 4px;
+}
+.cv-hamburger span:last-child{
+    margin-bottom: 0;
+}
+.cv-hamburger span:nth-child(2){
+    width: 10px;
+}
+header ul{
+    display: flex; 
+    align-items: center;
+}
+header ul li{
+    padding: 0 40px;
+}
+header ul li:first-child{
+    padding-left: 0;
+}
+header ul li:last-child{
+    padding-right: 0;
+}
+header ul li a{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+header ul li a:hover::after, header ul li a.is-active::after{
+    content: '';
+    background: rgb(245, 226, 226);
+    height: 9px;
+    position:absolute;
+    left: 1px;
+    z-index: -1;
+    bottom: 0;
+    right: -2px;
+}
+/**/
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+  }
+  
+  .sidenav .mat-toolbar {
+    background: inherit;
+  }
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .hidden {
+      display: none;
+  }

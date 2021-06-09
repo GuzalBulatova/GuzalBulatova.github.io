@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";  
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+p{
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a, a:hover{
+    text-decoration: none;
+    color:rgb(185, 177, 228);
+}
+h1, h2, h3{
+    font-weight: 700;
+}
+
+/*COMMON*/
+.cv-cursor{
+    cursor: pointer;
+}
+.cv-flex{
+    display: flex;
+}
+.cv-flex-align-center{
+    align-items: center;
+}
+.cv-flex-jc-sb{
+    justify-content: space-between;
+}
+.cv-readmore{
+    font-size: 20px;
+    color:black;
+    font-weight: 600;
+}
+.cv-readmore img{
+    transition: all .5s;
+    transform: translateX(0);
+}
+.cv-readmore:hover img{
+    transform: translateX(5px);
+}
+
+/*WRAPPER CLASS*/
+.cv-wrapper{
+    position: relative;
+}
+
+.cv-wrapper::before{
+    content: '';
+    background: rgb(185, 177, 228);
+    height: 100vh;
+    width: 25vw;
+    position: absolute;
+    z-index: -1;
+}

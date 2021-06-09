@@ -1,0 +1,22 @@
+.cv-profile{
+    background: url(/assets/img/mypic.jpg);
+    width: 400px;
+    height: 400px;
+    border-radius: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.cv-tag{
+    background: rgb(58, 57, 68);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin: 5px;
+}
+.cv-descr{
+    color:rgb(96, 96, 99);
+    width: 80%;
+}
